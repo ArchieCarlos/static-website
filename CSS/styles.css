@@ -40,9 +40,42 @@ h2 {
 
 p {
     font-size: 25px;
-    color: #5BB318;
+    color: #5bb318;
     -webkit-text-stroke-width: 0.80px;
 }
 #my-name {
     font-family: 'Merienda', cursive;
+}
+#right-side {
+    text-align: right;
+    display: inline-block;
+    width: 49%;
+}
+#left-side {
+    display: inline-block;
+    width: 50%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:visited {
+    color: #fff;
+}  
+a:hover {
+    color: #5bb318;
+} 
+a:active {
+    color: #5bb318;
+}
+.space {
+    padding: 3px;
+    margin: 8px;
+}
+.spaces {
+    padding: 3px;
+}
+header {
+    margin-top: 16px;
 }
