@@ -12,7 +12,6 @@ html, body {
 }
 body {
     background-image: url(https://tse3.mm.bing.net/th?id=OIP.xfU6OA40aEzh1Wh8Wp0drgHaEo&pid=Api&P=0) ;
-    background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Roboto Slab', serif;
 }
@@ -132,4 +131,16 @@ header {
 header > nav {
     display: flex;
     justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+footer > a > svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    fill: white;
 }
