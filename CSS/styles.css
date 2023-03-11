@@ -12,7 +12,6 @@ html, body {
 }
 body {
     background-image: url(https://tse3.mm.bing.net/th?id=OIP.xfU6OA40aEzh1Wh8Wp0drgHaEo&pid=Api&P=0) ;
-    background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Roboto Slab', serif;
 }
@@ -93,6 +92,7 @@ a:active {
     padding: 3px;
     margin: 8px;
 }
+
 #content div {
     width: 60%;
     position: absolute;
@@ -115,7 +115,7 @@ a:active {
 #hero-banner > div > div {
     display: inline-block;
 }
-#hero-banner h1, #hero-banner h2 {
+#hero-banner h1, #hero-banner h2 {v
     color: green;
 }
 h3 {
@@ -124,4 +124,29 @@ h3 {
     color: #5BB318;
     -webkit-text-stroke-width: 0.10px;
     -webkit-text-fill-color: white;
+}
+
+/* For v2.0 */
+header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+footer > a > svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    fill: white;
+}
+header > a > svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+        fill: white;
 }
