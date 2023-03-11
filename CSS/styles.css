@@ -16,6 +16,12 @@ body {
     background-size: 100%;
     font-family: 'Roboto Slab', serif;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+}
 
 h1, h2, p {
     color: rgb(31, 215, 31);
@@ -61,23 +67,14 @@ p {
 #my-name {
     font-family: 'Merienda', cursive;
 }
-#right-side {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
 #left-side {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-}
-#left-side > a {
-    margin-right: 16px;
+   display: flex;
+   flex-direction: row;
+   column-gap: 16px;
 }
 a {
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px dotted;
 }
 a:visited {
     color: #fff;
@@ -94,6 +91,7 @@ a:active {
 }
 .spaces {
     padding: 3px;
+    margin: 8px;
 }
 #content div {
     width: 60%;
