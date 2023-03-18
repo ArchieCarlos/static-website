@@ -32,14 +32,16 @@ h1, h2, p {
     width: 150px;
     border-radius: 10%;
 }
+
 footer {
     position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    width: 100vw;
+    padding: 16px;
 }
-footer a:first-child {
-    margin-right: 16px;
+footer > section {
+    display: flex;
+    justify-content: space-around;
 }
 
 #content {
@@ -94,11 +96,12 @@ a:active {
 }
 
 #content div {
-    width: 60%;
+    width: 100vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 16px;
 }
 
 /* Projects page */
@@ -115,7 +118,7 @@ a:active {
 #hero-banner > div > div {
     display: inline-block;
 }
-#hero-banner h1, #hero-banner h2 {v
+#hero-banner h1, #hero-banner h2 {
     color: green;
 }
 h3 {
@@ -133,17 +136,6 @@ header {
     justify-content: space-evenly;
 }
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-footer > a > svg {
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-    fill: white;
-}
 header > a > svg {
         width: 25px;
         height: 25px;
