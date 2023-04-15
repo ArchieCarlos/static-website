@@ -12,9 +12,14 @@ html, body {
 }
 body {
     background-image: url(https://tse3.mm.bing.net/th?id=OIP.xfU6OA40aEzh1Wh8Wp0drgHaEo&pid=Api&P=0) ;
-    background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Roboto Slab', serif;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
 }
 
 h1, h2, p {
@@ -24,17 +29,19 @@ h1, h2, p {
 }
 
 #my-avatar {
-    width: 150px;
+    width: 200px;
     border-radius: 10%;
 }
+
 footer {
     position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    width: 100vw;
+    padding: 16px;
 }
-footer a:first-child {
-    margin-right: 16px;
+footer > section {
+    display: flex;
+    justify-content: space-around;
 }
 
 #content {
@@ -61,23 +68,14 @@ p {
 #my-name {
     font-family: 'Merienda', cursive;
 }
-#right-side {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
 #left-side {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-}
-#left-side > a {
-    margin-right: 16px;
+   display: flex;
+   flex-direction: row;
+   column-gap: 16px;
 }
 a {
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px dotted;
 }
 a:visited {
     color: #fff;
@@ -94,13 +92,16 @@ a:active {
 }
 .spaces {
     padding: 3px;
+    margin: 8px;
 }
+
 #content div {
-    width: 60%;
+    width: 100vw;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 16px;
 }
 
 /* Projects page */
@@ -110,9 +111,12 @@ a:active {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/* tablet device */
+@media (min-width: 426px) and (max-width: 768px){
 #hero-banner > div {
     width: 50%;
     margin: 0 auto;
+}
 }
 #hero-banner > div > div {
     display: inline-block;
@@ -126,4 +130,18 @@ h3 {
     color: #5BB318;
     -webkit-text-stroke-width: 0.10px;
     -webkit-text-fill-color: white;
+}
+
+/* For v2.0 */
+header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header > a > svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+        fill: white;
 }
